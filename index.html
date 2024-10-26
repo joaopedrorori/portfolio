@@ -13,15 +13,15 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body class="cor-0">
-    <header class="header-bg">
+    <header class="header">
       <img src="./assets/img/logo.svg" alt="JOAO" />
 
       <nav>
         <ul class="navbar-menu cor-12">
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Formação</a></li>
-          <li><a href="#">Experiências</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#experiencias">Experiências</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -41,17 +41,18 @@
           <span class="cor-p7">&</span> UI/UX <br />
           DESIGNER
         </h1>
+        <p>Desenvolvedor <strong class="cor-p7">front end</strong> com programas prototipados e programados desde o zero com acessibilidade e ótima <strong class="cor-p7">experiencia de usuário</strong>.</p>
       </div>
     </article>
 
     <main class="main-bg">
       <div class="main-content">
-        <section class="projetos">
-          <h2 class="subtitle">PROJETOS</h2>
+        <section class="projetos" id="projetos">
+          <h2 class="subtitle">PRO<br>JE<br>TOS</h2>
 
           <div class="projeto-item">
             <h3 class="projetos-item-title">Bikcraft</h3>
-            <img
+            <img class="projeto-item-img"
               src="./assets/img/projetos/bikecraft.jpg"
               alt="Foto de projeto Bikcraft"
               width="260"
@@ -80,7 +81,7 @@
 
           <div class="projeto-item">
             <h3 class="projetos-item-title">Landing P.</h3>
-            <img
+            <img class="projeto-item-img"
               src="./assets/img/projetos/landingPage.jpg"
               alt="Foto de projeto landing page"
               width="260"
@@ -108,7 +109,7 @@
 
           <div class="projeto-item">
             <h3 class="projetos-item-title">Bikcraft</h3>
-            <img
+            <img class="projeto-item-img"
               src="./assets/img/projetos/bikcraftCard.jpg"
               alt="Foto de projeto Bikcraft"
               width="260"
@@ -136,7 +137,7 @@
 
           <div class="projeto-item">
             <h3 class="projetos-item-title">WildBeast</h3>
-            <img
+            <img class="projeto-item-img"
               src="./assets/img/projetos/wildbeast.jpg"
               alt="Foto de projeto WildBeast"
               width="260"
@@ -156,7 +157,7 @@
                   ><img src="./assets/img/icons/github.svg" alt=""
                 /></a>
                 <a href="#"
-                  ><img src="./assets/img/icons/sites.svg" alt=""
+                  ><img src="./assets/img/icons/sites.svg/" alt=""
                 /></a>
               </div>
             </div>
@@ -164,7 +165,7 @@
 
           <div class="projeto-item">
             <h3 class="projetos-item-title">FlexBlog</h3>
-            <img
+            <img class="projeto-item-img"
               src="./assets/img/projetos/flexblog.jpg"
               alt="Foto de projeto FlexBlog"
               width="260"
@@ -191,12 +192,12 @@
           </div>
         </section>
 
-        <section class="formacao">
+        <section class="formacao" id="formacao">
           <h2 class="subtitle">formacao</h2>
 
           <div class="formacao-item">
             <div class="formacao-item-title">
-              <h3>GRADUACAO</h3>
+              <h3 class="titulo-pequeno">GRADUACAO</h3>
               <span>2021 - 2025</span>
             </div>
             <p>Tecnologia e Sistemas para Internet</p>
@@ -205,7 +206,7 @@
 
           <div class="formacao-item">
             <div class="formacao-item-title">
-              <h3>IDIOMAS</h3>
+              <h3 class="titulo-pequeno">IDIOMAS</h3>
               <span>2015 - 2021</span>
             </div>
             <p>Inglês</p>
@@ -214,7 +215,7 @@
 
           <div class="formacao-item">
             <div class="formacao-item-title">
-              <h3>CURSOS INTENSIVOS</h3>
+              <h3 class="titulo-pequeno">CURSOS INTENSIVOS</h3>
               <span>2024 - 2024</span>
             </div>
             <ul>
@@ -227,16 +228,16 @@
           </div>
         </section>
 
-        <section class="experiencias">
+        <section class="experiencias" id="experiencias">
           <h2 class="subtitle">Experiências</h2>
 
           <div class="experiencias-item">
             <div class="experiencias-item-title">
-              <h3>TECNICO</h3>
+              <h3 class="titulo-pequeno">TECNICO</h3>
               <span>2021 - 2022</span>
             </div>
             <p>Técnico de T.I.</p>
-            <p>
+            <p class="descricao-experiencia">
               Exerci funções de <strong>help desk</strong> em aplicações de dois
               concursos, MPE Tocantins, e Petrobrás, auxiliando na
               <strong>infraestrutura de redes</strong> das aplicações.
@@ -246,11 +247,11 @@
 
           <div class="experiencias-item">
             <div class="experiencias-item-title">
-              <h3>ESTAGIO</h3>
+              <h3 class="titulo-pequeno">ESTAGIO</h3>
               <span>2022 - 2024</span>
             </div>
             <p>Segurança de Redes</p>
-            <p>
+            <p class="descricao-experiencia">
               Exerci juntamente a segurança de redes, funções de
               <strong>help desk</strong> e
               <strong>infraestrutura de redes</strong>.
@@ -261,8 +262,11 @@
       </div>
     </main>
 
-    <section class="contato">
+    <section class="contato" id="contato">
       <h1 class="cor-2">contato</h1>
+
+      <p>Se interessou por uma conversa ou quer saber mais sobre mim? 
+        Me <strong>contate</strong> atravez de um dos metodos abaixo!</p>
 
       <div class="meios-contato">
         <ul>

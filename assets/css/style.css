@@ -1,5 +1,8 @@
 @import "./utilities/colors.css";
-
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +11,8 @@
 
 body {
   font-family: "Poppins", "Source Sans 3", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--cor-0);
 }
 h1,
 h2,
@@ -16,32 +21,209 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
-  color: var(--cor-9);
+  color: var(--cor-11);
 }
 h1,
 h2 {
   text-transform: uppercase;
 }
-p,
-span {
-  font-family: "Source Sans 3", sans-serif;
+h1{
+  font-size: 10rem;
+  line-height: 10rem;
+  letter-spacing: 0.016em;
 }
-p {
+h2{
+  font-size: 12rem;
+  line-height: 12rem;
+  letter-spacing: 0.016em;
   color: var(--cor-9);
-  font-weight: 400;
 }
-ul {
-  list-style: none;
-  color: var(--cor-12);
+h2:not(.projetos > .subtitle){
+  letter-spacing: -0.00075em;
+}
+.projeto-item h3{
+  font-size: 4rem;
+  line-height: 4rem;
+  letter-spacing: 0.016em;
+}
+.formacao-item h3,
+.experiencias-item h3,
+.formacao-item span,
+.experiencias-item span{
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.016em;
+  color: var(--cor-c7);
 }
 a {
   text-decoration: none;
   color: var(--cor-12);
+  display: inline-block;
 }
+nav ul a{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  letter-spacing: 0.02em;
+}
+.contato ul a{
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.016em;
+}
+span,p {
+  font-family: "Source Sans 3", sans-serif;
+}
+.intro-content p,
+.contato p{
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.016em;
+  color: var(--cor-9);
+}
+.main-content p,
+.formacao ul,
+.footer p,
+.footer a{
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.016em;
+  color: var(--cor-2);
+}
+
+.experiencias-item .descricao-experiencia{
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.016em;
+  color: var(--cor-2);
+}
+.experiencias-item .descricao-experiencia strong{
+color: var(--cor-1);
+}
+
+ul {
+  list-style: none;
+}
+
 img {
   max-width: 100%;
+  border-radius: 2px;
 }
-span {
-  color: var(--cor-7);
-  font-weight: 600;
+
+
+
+/* Navbar */
+.header{
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem 0 2rem ;
 }
+
+.navbar-menu{
+  display: flex;
+  gap: 5.1rem;
+}
+
+/* intro */
+.intro{
+  max-width: 120rem;
+  padding: 6rem 2rem 6rem 2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 3.5fr;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-intro{
+  position: relative;
+  border-radius: 2px;
+}
+.img-intro::before{
+  content: "";
+  width: 300px;
+  height: 424px;
+  border: solid 1px var(--cor-p6);
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  z-index: -1;
+  border-radius: 2px;
+}
+
+.intro-content{
+  margin-left: 200px;
+}
+
+/* main */
+.main-bg{
+  background-color: var(--cor-11);
+}
+.main-content{
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 6rem 2rem 6rem 2rem;
+}
+
+
+/* projetos */
+
+.projetos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 6rem;
+  margin-top: 12rem;
+  margin-bottom: 14rem;
+}
+
+.projeto-item{
+  background-color: var(--cor-10);
+  padding: 2rem;
+  border-radius: 2px;
+  
+}
+.projeto-item::before{
+  content: "";
+}
+.projeto-item h3{
+  margin-bottom: 2rem;
+}
+.projeto-item-img {
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+.projeto-item p{
+  margin-bottom: 4rem;
+}
+.item-icons{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 0px;
+}
+.languages-icons{
+  display: flex;
+  gap: 1.2rem;
+  align-self: center;
+  width: 25px;
+}
+.languages-icons img{
+width: 25px;
+}
+.links-icons{
+  display: flex;
+  gap: 1.2rem;
+  align-self: center;
+  height: 27px;
+}
+.links-icons a img{
+width: 27px;
+}
+
