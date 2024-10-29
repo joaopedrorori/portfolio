@@ -1,5 +1,5 @@
 @import "./utilities/colors.css";
-html{
+html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -27,21 +27,21 @@ h1,
 h2 {
   text-transform: uppercase;
 }
-h1{
+h1 {
   font-size: 10rem;
   line-height: 10rem;
   letter-spacing: 0.016em;
 }
-h2{
+h2 {
   font-size: 12rem;
   line-height: 12rem;
   letter-spacing: 0.016em;
   color: var(--cor-9);
 }
-h2:not(.projetos > .subtitle){
+h2:not(.projetos > .subtitle) {
   letter-spacing: -0.00075em;
 }
-.projeto-item h3{
+.projeto-item h3 {
   font-size: 4rem;
   line-height: 4rem;
   letter-spacing: 0.016em;
@@ -49,34 +49,35 @@ h2:not(.projetos > .subtitle){
 .formacao-item h3,
 .experiencias-item h3,
 .formacao-item span,
-.experiencias-item span{
+.experiencias-item span {
   font-size: 1.2rem;
   line-height: 1.2rem;
   letter-spacing: 0.016em;
-  color: var(--cor-c7);
+  color: var(--cor-7);
 }
 a {
   text-decoration: none;
   color: var(--cor-12);
   display: inline-block;
 }
-nav ul a{
-  font-family: 'Poppins', sans-serif;
+nav ul a {
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
   line-height: 2rem;
   letter-spacing: 0.02em;
 }
-.contato ul a{
-  font-family: 'Source Sans 3', sans-serif;
+.contato ul a {
+  font-family: "Source Sans 3", sans-serif;
   font-size: 2.4rem;
   line-height: 2.4rem;
   letter-spacing: 0.016em;
 }
-span,p {
+span,
+p {
   font-family: "Source Sans 3", sans-serif;
 }
 .intro-content p,
-.contato p{
+.contato p {
   font-size: 2.4rem;
   line-height: 3.2rem;
   letter-spacing: 0.016em;
@@ -85,21 +86,21 @@ span,p {
 .main-content p,
 .formacao ul,
 .footer p,
-.footer a{
+.footer a {
   font-size: 1.6rem;
   line-height: 2.4rem;
   letter-spacing: 0.016em;
   color: var(--cor-2);
 }
 
-.experiencias-item .descricao-experiencia{
+.experiencias-item .descricao-experiencia {
   font-size: 1.2rem;
   line-height: 2rem;
   letter-spacing: 0.016em;
   color: var(--cor-2);
 }
-.experiencias-item .descricao-experiencia strong{
-color: var(--cor-1);
+.experiencias-item .descricao-experiencia strong {
+  color: var(--cor-1);
 }
 
 ul {
@@ -108,14 +109,12 @@ ul {
 
 img {
   max-width: 100%;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
-
-
 /* Navbar */
-.header{
-  max-width: 120rem;
+.header {
+  max-width: 116rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr auto;
@@ -123,17 +122,17 @@ img {
   align-items: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding: 0 2rem 0 2rem ;
+  padding: 0 2rem 0 2rem;
 }
 
-.navbar-menu{
+.navbar-menu {
   display: flex;
   gap: 5.1rem;
 }
 
 /* intro */
-.intro{
-  max-width: 120rem;
+.intro {
+  max-width: 116rem;
   padding: 6rem 2rem 6rem 2rem;
   margin: 0 auto;
   display: grid;
@@ -141,11 +140,12 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.img-intro{
+.img-intro {
   position: relative;
   border-radius: 2px;
+  min-width: 300px;
 }
-.img-intro::before{
+.img-intro::before {
   content: "";
   width: 300px;
   height: 424px;
@@ -157,73 +157,134 @@ img {
   border-radius: 2px;
 }
 
-.intro-content{
+.intro-content {
   margin-left: 200px;
 }
 
 /* main */
-.main-bg{
+.main-bg {
   background-color: var(--cor-11);
+  position: relative;
+  z-index: 0;
 }
-.main-content{
-  max-width: 120rem;
+.main-content {
+  max-width: 116rem;
   margin: 0 auto;
   padding: 6rem 2rem 6rem 2rem;
 }
 
+/* main.projetos */
 
-/* projetos */
-
-.projetos{
+.projetos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 6rem;
+  grid-template-columns: repeat(3, 30rem);
+  gap: 5rem 10rem;
   margin-top: 12rem;
   margin-bottom: 14rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.projeto-item{
+.projeto-item {
   background-color: var(--cor-10);
   padding: 2rem;
   border-radius: 2px;
-  
+  position: relative;
 }
-.projeto-item::before{
+.projeto-item::before {
   content: "";
+  width: 300px;
+  height: 438px;
+  border: solid 1px var(--cor-p6);
+  position: absolute;
+  left: -8px;
+  top: -8px;
+  z-index: -1;
+  border-radius: 2px;
 }
-.projeto-item h3{
+.projeto-item h3 {
   margin-bottom: 2rem;
 }
 .projeto-item-img {
   width: 100%;
+  object-fit: cover;
   margin-bottom: 2.4rem;
 }
-.projeto-item p{
+.projeto-item p {
   margin-bottom: 4rem;
 }
-.item-icons{
+.item-icons {
   display: flex;
   justify-content: space-between;
   align-content: center;
   margin-bottom: 0px;
 }
-.languages-icons{
+.languages-icons {
   display: flex;
   gap: 1.2rem;
   align-self: center;
   width: 25px;
 }
-.languages-icons img{
-width: 25px;
+.languages-icons img {
+  width: 25px;
 }
-.links-icons{
+.links-icons {
   display: flex;
   gap: 1.2rem;
   align-self: center;
   height: 27px;
 }
-.links-icons a img{
-width: 27px;
+.links-icons a img {
+  width: 27px;
 }
 
+/*main.formacao*/
+
+.formacao {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.6rem 4rem;
+  margin-bottom: 6rem;
+}
+.formacao .subtitle {
+  grid-column: 3;
+  grid-row: 1/-1;
+  padding: 0;
+  margin: 0;
+}
+.formacao .cursos {
+  grid-column: 2;
+  grid-row: 1/-1;
+}
+.cursos ul li {
+  margin-bottom: 14px;
+}
+.formacao-item {
+  background-color: var(--cor-10);
+  padding: 16px 16px 16px 16px;
+  border-radius: 2px;
+  width: 100%;
+}
+.formacao-item-title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  position: relative;
+}
+.formacao-item .instituicao {
+  padding-top: 24px;
+}
+.formacao-item-title::before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 4px;
+  background-color: var(--cor-p5);
+  left: -18px;
+}
+
+/**/
