@@ -125,6 +125,7 @@ img {
 
 .navbar-menu {
   display: flex;
+  flex-wrap: wrap;
   gap: 5.1rem;
 }
 
@@ -191,8 +192,8 @@ img {
 }
 .projeto-item::before {
   content: "";
-  width: 300px;
-  height: 438px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
   border: solid 1px var(--cor-p6);
   position: absolute;
   left: -8px;
@@ -333,12 +334,14 @@ img {
 
 /* CONTATO */
 .contato {
-  width: 140rem;
+  max-width: 140rem;
   margin: 0 auto;
   margin-top: 12rem;
+  margin-bottom: 6rem;
   position: relative;
   display: grid;
   justify-content: center;
+  padding: 0 2rem;
 }
 .contato h1 {
   font-size: 26rem;
@@ -351,13 +354,25 @@ img {
   max-width: 100%;
   letter-spacing: 0em;
 }
+
 .contato-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
   justify-content: space-around;
-  max-width: 116rem;
+  max-width: 100%;
+  /* gap: ; */
+}
+/* .contato-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 116rem;
+} */
+.contato-content > p {
+  max-width: 360px;
 }
 .meios-contato ul li,
 .redes-contato ul li {
@@ -390,4 +405,47 @@ img {
 .visible:hover {
   background-color: var(--cor-p8);
   color: var(--cor-0);
+}
+
+.segundo {
+  display: none;
+}
+@media (max-width: 1400px) {
+  .contato {
+    margin-top: 6rem;
+  }
+  .contato h1 {
+    position: initial;
+    font-size: 20rem;
+    justify-self: center;
+    margin-bottom: 6rem;
+  }
+  .contato-content {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .projetos {
+    grid-template-columns: repeat(2, minmax(200px, 500px));
+    gap: 5rem;
+    max-width: 116rem;
+  }
+  .projetos .subtitle {
+    word-break: break-word;
+  }
+  .primeiro {
+    display: none;
+  }
+  .segundo {
+    display: block;
+    font-size: 14rem;
+  }
+  .intro-content {
+    margin-left: 10rem;
+  }
+  .intro-content h1 {
+    font-size: 8rem;
+    line-height: 8rem;
+  }
 }
