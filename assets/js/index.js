@@ -9,7 +9,6 @@ function abreMenu(event) {
   const navBar = document.querySelector(".navbar");
   const menu = document.querySelector(".navbar-menu");
   const active = navBar.classList.contains("active");
-  console.log(event.target);
   menu.addEventListener("click", (e) => {
     const fatherElement = e.target.parentNode.parentNode;
     if (fatherElement === menu) {
