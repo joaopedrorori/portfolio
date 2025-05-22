@@ -684,14 +684,17 @@ img {
     font-size: 4rem;
     line-height: 4rem;
   }
+  .intro-content p {
+    margin-top: 20px;
+  }
   .contato {
     gap: 2rem;
   }
   .intro-content p,
   .contato-content p,
   .contato-content ul a {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
   .contato {
     grid-template-columns: minmax(100px, 1fr);
